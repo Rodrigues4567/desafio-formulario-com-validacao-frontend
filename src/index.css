@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'font-padrao';
+  src: url('/public/font/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'font-bold';
+  src: url('/public/font/Poppins/Poppins-Bold.ttf');
+}
+
+* {
+  @apply m-0 p-0 box-border;
+}
+
+body {
+  @apply h-screen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'font-padrao', sans-serif;
+  background-color: #F2F2F2;
+}
